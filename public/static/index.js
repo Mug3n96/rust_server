@@ -1,7 +1,13 @@
+// views
 import Home from "./views/Home.js";
 import Plugins from "./views/Plugins.js";
 
-const navigateTo = url => {
+// modules
+import Hamburger from "./modules/hamburger.js";
+
+// router start ------------------------
+
+const navigateTo = (url) => {
   history.pushState(null, null, url);
   router();
 };
@@ -16,19 +22,19 @@ const router = async () => {
     // { path: "/contact", view: () => console.log("Viewing Contact")}
   ];
 
-  const potentialMatches = routes.map(route => {
+  const potentialMatches = routes.map((route) => {
     return {
       route: route,
-      isMatch: location.pathname === route.path
+      isMatch: location.pathname === route.path,
     };
   });
 
-  let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
+  let match = potentialMatches.find((potentialMatch) => potentialMatch.isMatch);
 
   if (!match) {
     match = {
       route: routes[0],
-      isMatch: true
+      isMatch: true,
     };
   }
 
@@ -40,7 +46,7 @@ const router = async () => {
 window.addEventListener("popstate", router);
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.body.addEventListener("click",  e => {
+  document.body.addEventListener("click", (e) => {
     if (e.target.matches("[data-link]")) {
       e.preventDefault();
       navigateTo(e.target.href);
@@ -48,4 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   router();
 });
+
+// router end -----------------------
+
+const burger = new Hamburger(document.querySelector("#burger_nav"),
+  document.querySelector("#main_nav"));
+
+burger.init();
 

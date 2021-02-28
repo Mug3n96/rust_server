@@ -1,8 +1,8 @@
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
     this.setTitle("Plugins");
   }
 
@@ -54,7 +54,7 @@ export default class extends AbstractView {
             <h3 class="article-header__title">${elem.title}</h3>
             <h5>${elem.text}</h5>
           </header>
-          <a href="plugins/${elem.link}" 
+          <a href="/plugins/${elem.link}" 
             class="article-button plugin">read more</a>
         </article>\n`;
     });

@@ -17,6 +17,7 @@ const router = async () => {
     // { path: "/error", view: () => console.log("404")},
     { path: "/", view: Home },
     { path: "/plugins", view: Plugins },
+    // { path: "/plugins/:id", view: Plugin }
     // { path: "/info", view: () => console.log("Viewing Info")},
     // { path: "/rules", view: () => console.log("Viewing Rules")},
     // { path: "/contact", view: () => console.log("Viewing Contact")}

@@ -55,7 +55,7 @@ export default class extends AbstractView {
             <h5>${elem.text}</h5>
           </header>
           <a href="/plugins/${elem.link}" 
-            class="article-button plugin">read more</a>
+            class="article-button plugin" data-link>read more</a>
         </article>\n`;
     });
     return html;

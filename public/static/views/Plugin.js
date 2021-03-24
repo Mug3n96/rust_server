@@ -21,32 +21,32 @@ export default class extends AbstractView {
         </ul>
         <span>To see if a player is offline or afk use the <span class="akzent-secondary">/ao</span> command.</span>
       `,
-      pluginAuthor: `<a class="article-button plugin" href="https://umod.org/user/Calytic">Calytic</a>`,
+      pluginAuthor: `<a class="article-button plugin" href="https://umod.org/user/calytic">calytic</a>`,
       linkToPlugin: `<a class="article-button plugin" href="https://umod.org/plugins/anti-offline-raid">Anti Offline Raid</a>`,
       link: "antiofflineraid",
     },
     {
       title: `Remover Tool`,
-      description: ``,
-      configuration: ``,
-      pluginAuthor: ``,
-      linkToPlugin: ``,
+      description: `With the <span class="akzent-secondary">"Remover Tool"</span> plugin you can <span class="akzent-secondary">remove/pickup</span> structures which you placed (you have to pay a little <span class="akzent-secondary">fee</span>). To remove a structure write the <span class="akzent-secondary">/remove</span> command into your chat.`,
+      configuration: `You can only pickup your placed structures, independent of your <span class="akzent-secondary">cupboard</span>. Players which are authorized to <span class="akzent-secondary">your</span> cupboard <span class="akzent-secondary">won't</span> be able to pickup structures. This <span class="akzent-secondary">prevents</span> an abbuse of the plugin.`,
+      pluginAuthor: `<a class="article-button plugin" href="https://umod.org/user/Arainrr">Arainrr</a>`,
+      linkToPlugin: `<a class="article-button plugin" href="https://umod.org/plugins/remover-tool">Remover Tool</a>`,
       link: `removertool`
     },
     {
       title: `Info Panel`,
-      description: ``,
-      configuration: ``,
-      pluginAuthor: ``,
-      linkToPlugin: ``,
+      description: `Info Panel will show you some <span class="akzent-secondary">informations</span> about ingame events, time, playercount etc.`,
+      configuration: `On the left top you can see the activity of the 4 <span class="akzent-secondary">main</span> events in the game and the <span class="akzent-secondary">clock.</span> On the bottom left you can see how many <span class="akzent-secondary">players</span> are online. On the top right you can see some <span class="akzent-secondary">custom</span> <span class="akzent-secondary">messages</span> which cycle through.`,
+      pluginAuthor: `<a class="article-button plugin" href="https://umod.org/user/Default">Default</a>`,
+      linkToPlugin: `<a class="article-button plugin" href="https://umod.org/plugins/info-panel">Info Panel</a>`,
       link: `infopanel`
     },
     {
       title: `Dangerous Treasures`,
-      description: ``,
-      configuration: ``,
-      pluginAuthor: ``,
-      linkToPlugin: ``,
+      description: `This plugin will spawn randomly a <span class="akzent-secondary">sphere</span> somewhere on the map. The sphere will contain a <span class="akzent-secondary">treasure</span> with high tier loot and <span class="akzent-secondary">npcs</span>. If a player is able to get the <span class="akzent-secondary">items</span> from the treasure, the event will end. Be carefull <span class="akzent-secondary">other</span> players might be coming for the loot!`,
+      configuration: `<span class="akzent-secondary">8</span> NPCs will spawn which will <span class="akzent-secondary">attack</span> players. The treasure will contain <span class="akzent-secondary">12</span> items. Each item will be one of a defined <span class="akzent-secondary">loottable.</span> The event will be announced in the <span class="akzent-secondary">chat</span> and shown on the <span class="akzent-secondary">map</span>. Right now only the <span class="akzent-secondary">admins</span> can trigger the event. With <span class="akzent-secondary">more</span> players the event will start without the help of an admin.`,
+      pluginAuthor: `<a class="article-button plugin" href="https://umod.org/user/nivex">nivex</a>`,
+      linkToPlugin: `<a class="article-button plugin" href="https://umod.org/plugins/dangerous-treasures">Dangerous Treasures</a>`,
       link: `dangeroustreasures`
     },
     {

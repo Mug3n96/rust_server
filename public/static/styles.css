@@ -211,7 +211,7 @@ h3 {
 
 .footer-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 1em;
   background: rgba(var(--main-bg-color), 0.2);
   bottom: 50%;
@@ -227,6 +227,14 @@ h3 {
 
 .footer-container .icon:hover {
   color: rgba(var(--main-tx-color));
+}
+
+.akzent-secondary {
+  color: rgba(var(--secondary-bg-color));
+}
+
+.plugin-container a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 960px) {

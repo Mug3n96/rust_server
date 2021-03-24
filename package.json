@@ -1,0 +1,23 @@
+{
+  "name": "rust_server",
+  "version": "0.1.0",
+  "description": "Single Page without framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mug3n96/rust_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mug3n96/rust_server/issues"
+  },
+  "homepage": "https://github.com/Mug3n96/rust_server#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}

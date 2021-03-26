@@ -14,5 +14,11 @@ export default class Hamburger {
         this.nav.classList.add("active");
       }
     });
+    document.querySelectorAll("a").forEach((elem) =>
+      elem.addEventListener("click", () => {
+        this.nav.classList.remove("active");
+        this.nav.classList.add("disabled");
+      })
+    );
   }
 }

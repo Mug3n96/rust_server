@@ -65,13 +65,13 @@ h3 {
   top: 0;
   left: 0;
   font-size: 2.3em;
-  width: 80vw;
   display: flex;
+  padding: 2em;
   background: rgba(var(--main-bg-color), 0.98);
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  transform: translateX(-80vw);
+  transform: translateX(-100%);
   transition: 300ms;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -82,7 +82,7 @@ h3 {
 }
 
 .nav-container.disabled {
-  transform: translateX(-80vw);
+  transform: translateX(-100%);
 }
 
 .nav-group {
@@ -179,7 +179,7 @@ h3 {
 .article.plugin {
   width: 320px;
   padding: 1em;
-  background: rgba(var(--main-bg-color), 0.7);
+  background: rgba(var(--main-bg-color), 0.9);
   margin: 0.5em;
   display: flex;
   flex-direction: column;
@@ -245,10 +245,18 @@ h3 {
     position: static;
     transform: none;
     background: rgba(var(--main-bg-color), 0.8);
-    width: 100%;
     flex: 1.5;
     padding-right: 1em;
     padding-left: 1em;
+  }
+
+  /* Ignore active and disabled for large screens */
+  .nav-container.active {
+    transform: none;
+  }
+
+  .nav-container.disabled {
+    transform: none;
   }
 
   .nav-hamburger {

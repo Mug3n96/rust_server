@@ -14,8 +14,14 @@ export default class extends AbstractView {
         </header>
         <main>
           <div class="info-section">
-            <h4>Server-IP: <span>173.212.227.88:25018</span></h4>
-            <h4>Contact: <span>dios-mansion@outlook.de</span></h4>
+            <div>
+              <h4>Server-IP:</h4>
+              <p>173.212.227.88:25018</p>
+            </div>
+            <div>
+              <h4>Contact:</h4>
+              <p>dios-mansion@outlook.de</p>
+            </div>
             <p>Don't be shy to message us :). You can message us via e-mail, ingame or on Discord.</p>
           </div>
           <div>

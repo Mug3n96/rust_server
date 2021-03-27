@@ -2,6 +2,7 @@
 import Home from "./views/Home.js";
 import Plugins from "./views/Plugins.js";
 import Plugin from "./views/Plugin.js";
+import Info from "./views/Info.js";
 
 // modules
 import Hamburger from "./modules/hamburger.js";
@@ -33,9 +34,8 @@ const router = async () => {
     { path: "/", view: Home },
     { path: "/plugins", view: Plugins },
     { path: "/plugins/:id", view: Plugin },
-    // { path: "/info", view: () => console.log("Viewing Info")},
+    { path: "/info", view: Info},
     // { path: "/rules", view: () => console.log("Viewing Rules")},
-    // { path: "/contact", view: () => console.log("Viewing Contact")}
   ];
 
   const potentialMatches = routes.map((route) => {

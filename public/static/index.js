@@ -36,7 +36,6 @@ const router = async () => {
     { path: "/plugins/:id", view: Plugin },
     { path: "/info", view: Info},
     // { path: "/rules", view: () => console.log("Viewing Rules")},
-    // { path: "/contact", view: () => console.log("Viewing Contact")}
   ];
 
   const potentialMatches = routes.map((route) => {
